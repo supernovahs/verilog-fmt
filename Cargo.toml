@@ -1,0 +1,19 @@
+[workspace]
+resolver = "2"
+members = [
+    "verible-fmt-core",
+    "verible-fmt-cli"
+]
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["supernova@onlyevm.com"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/supernovahs/verible-fmt"
+description = "A Verilog/SystemVerilog formatter"
+
+[workspace.dependencies]
+clap = "4.5"
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1.47", features = ["full"] }
+anyhow = "1.0"

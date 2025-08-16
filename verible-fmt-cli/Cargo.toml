@@ -1,0 +1,18 @@
+[package]
+name = "verible-fmt-cli"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Command-line interface for Verilog/SystemVerilog formatter"
+
+[[bin]]
+name = "verible-fmt"
+path = "src/main.rs"
+
+[dependencies]
+verible-fmt-core = { path = "../verible-fmt-core" }
+clap.workspace = true
+anyhow.workspace = true
+tokio.workspace = true

@@ -1,0 +1,12 @@
+[package]
+name = "verible-fmt-core"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Core formatting logic for Verilog/SystemVerilog"
+
+[dependencies]
+serde.workspace = true
+anyhow.workspace = true
